@@ -1,0 +1,40 @@
+$themes: (
+  rose-pine: (
+    light: (
+      bg: #faf4ed,
+      text: #575279,
+    ),
+    dark: (
+      bg: #191724,
+      text: #e0def4,
+    ),
+  ),
+  catppuccin: (
+    light: (
+      bg: #eff1f5,
+      text: #4c4f69,
+    ),
+    dark: (
+      bg: #1e1e2e,
+      text: #cdd6f4,
+    ),
+  ),
+  // tokyonight: (
+  //   light: (),
+  //   dark: (),
+  // ),
+  // kanagawa: (
+  //   light: (),
+  //   dark: (),
+   // ),
+);
+
+@each $themeName, $modes in $themes {
+  @each $mode, $vars in $modes {
+    .theme-#{$themeName}-#{$mode} {
+      @each $token, $color in $vars {
+        --#{$token}: #{$color};
+      }
+    }
+  }
+}
