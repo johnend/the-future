@@ -1,0 +1,197 @@
+// themes.scss
+// Extended app theme tokens for Rosé Pine and Catppuccin (light + dark)
+// Using actual palette values: Rose Pine (dawn & main) & Catppuccin (latte & mocha)
+
+$themes: (
+  rose-pine: (
+    light: (
+      bg: #faf4ed,
+      // dawn Base ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      surface: #fffaf3,
+      // dawn Surface ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "muted-surface": #f2e9e1,
+      // dawn Overlay ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      text: #575279,
+      // dawn Text ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "text-muted": #9893a5,
+      // dawn Muted ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      primary: #286983,
+      // dawn Pine ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "primary-hover": #3e8fb0,
+      // dawn Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      secondary: #9ccfd8,
+      // dawn Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "secondary-hover": #c4a7e7,
+      // dawn Iris ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      accent: #eb6f92,
+      // dawn Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "accent-hover": #f6c177,
+      // dawn Gold ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      link: #c4a7e7,
+      // dawn Iris ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "link-hover": #eb6f92,
+      // dawn Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      border: #f2e9e1,
+      // dawn Overlay ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "focus-ring": #cecacd,
+      // dawn Highlight High ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      disabled: #9893a5,
+      // dawn Muted ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      backdrop: rgba(242, 233, 222, 0.5),
+      // dawn Overlay ◎
+      success: #286983,
+      // dawn Pine ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      info: #9ccfd8,
+      // dawn Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      warning: #f6c177,
+      // dawn Gold ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      error: #eb6f92,
+      // dawn Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+    ),
+    dark: (
+      bg: #191724,
+      // main Base ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      surface: #1f1d2e,
+      // main Surface ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "muted-surface": #26233a,
+      // main Overlay ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      text: #e0def4,
+      // main Text ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "text-muted": #6e6a86,
+      // main Muted ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      primary: #31748f,
+      // main Pine ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "primary-hover": #9ccfd8,
+      // main Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      secondary: #9ccfd8,
+      // main Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "secondary-hover": #c4a7e7,
+      // main Iris ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      accent: #eb6f92,
+      // main Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "accent-hover": #f6c177,
+      // main Gold ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      link: #c4a7e7,
+      // main Iris ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "link-hover": #eb6f92,
+      // main Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      border: #26233a,
+      // main Overlay ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      "focus-ring": #403d52,
+      // main Highlight Med ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      disabled: #6e6a86,
+      // main Muted ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      backdrop: rgba(38, 35, 58, 0.5),
+      // main Overlay ◎
+      success: #31748f,
+      // main Pine ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      info: #9ccfd8,
+      // main Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      warning: #f6c177,
+      // main Gold ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+      error: #eb6f92,
+      // main Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
+    ),
+  ),
+  catppuccin: (
+    light: (
+      bg: #eff1f5,
+      // Latte Base ([catppuccin.com](https://catppuccin.com/palette/))
+      surface: #ccd0da,
+      // Latte Surface 0 ([catppuccin.com](https://catppuccin.com/palette/))
+      "muted-surface": #bcc0cc,
+      // Latte Surface 1 ([catppuccin.com](https://catppuccin.com/palette/))
+      text: #4c4f69,
+      // Latte Text ([catppuccin.com](https://catppuccin.com/palette/))
+      "text-muted": #6c6f85,
+      // Latte Subtext 0 ([catppuccin.com](https://catppuccin.com/palette/))
+      primary: #ea76cb,
+      // Latte Pink ([catppuccin.com](https://catppuccin.com/palette/))
+      "primary-hover": #8839ef,
+      // Latte Mauve ([catppuccin.com](https://catppuccin.com/palette/))
+      secondary: #179299,
+      // Latte Teal ([catppuccin.com](https://catppuccin.com/palette/))
+      "secondary-hover": #04a5e5,
+      // Latte Sky ([catppuccin.com](https://catppuccin.com/palette/))
+      accent: #df8e1d,
+      // Latte Yellow ([catppuccin.com](https://catppuccin.com/palette/))
+      "accent-hover": #fe640b,
+      // Latte Peach ([catppuccin.com](https://catppuccin.com/palette/))
+      link: #209fb5,
+      // Latte Sapphire ([catppuccin.com](https://catppuccin.com/palette/))
+      "link-hover": #1e66f5,
+      // Latte Blue ([catppuccin.com](https://catppuccin.com/palette/))
+      border: #9ca0b0,
+      // Latte Overlay 0 ([catppuccin.com](https://catppuccin.com/palette/))
+      "focus-ring": #8c8fa1,
+      // Latte Overlay 1 ([catppuccin.com](https://catppuccin.com/palette/))
+      disabled: #acb0be,
+      // Latte Surface 2 ([catppuccin.com](https://catppuccin.com/palette/))
+      backdrop: rgba(239, 241, 245, 0.5),
+      // Latte Base ◎
+      success: #40a02b,
+      // Latte Green ([catppuccin.com](https://catppuccin.com/palette/))
+      info: #1e66f5,
+      // Latte Blue ([catppuccin.com](https://catppuccin.com/palette/))
+      warning: #df8e1d,
+      // Latte Yellow ([catppuccin.com](https://catppuccin.com/palette/))
+      error: #d20f39,
+      // Latte Red ([catppuccin.com](https://catppuccin.com/palette/))
+    ),
+    dark: (
+      bg: #1e1e2e,
+      // Mocha Base ([catppuccin.com](https://catppuccin.com/palette/))
+      surface: #313244,
+      // Mocha Surface 0 ([catppuccin.com](https://catppuccin.com/palette/))
+      "muted-surface": #45475a,
+      // Mocha Surface 1 ([catppuccin.com](https://catppuccin.com/palette/))
+      text: #cdd6f4,
+      // Mocha Text ([catppuccin.com](https://catppuccin.com/palette/))
+      "text-muted": #a6adc8,
+      // Mocha Subtext 0 ([catppuccin.com](https://catppuccin.com/palette/))
+      primary: #f5c2e7,
+      // Mocha Pink ([catppuccin.com](https://catppuccin.com/palette/))
+      "primary-hover": #cba6f7,
+      // Mocha Mauve ([catppuccin.com](https://catppuccin.com/palette/))
+      secondary: #94e2d5,
+      // Mocha Teal ([catppuccin.com](https://catppuccin.com/palette/))
+      "secondary-hover": #89dceb,
+      // Mocha Sky ([catppuccin.com](https://catppuccin.com/palette/))
+      accent: #f9e2af,
+      // Mocha Yellow ([catppuccin.com](https://catppuccin.com/palette/))
+      "accent-hover": #fab387,
+      // Mocha Peach ([catppuccin.com](https://catppuccin.com/palette/))
+      link: #74c7ec,
+      // Mocha Sapphire ([catppuccin.com](https://catppuccin.com/palette/))
+      "link-hover": #89b4fa,
+      // Mocha Blue ([catppuccin.com](https://catppuccin.com/palette/))
+      border: #6c7086,
+      // Mocha Overlay 0 ([catppuccin.com](https://catppuccin.com/palette/))
+      "focus-ring": #7f849c,
+      // Mocha Overlay 1 ([catppuccin.com](https://catppuccin.com/palette/))
+      disabled: #585b70,
+      // Mocha Surface 2 ([catppuccin.com](https://catppuccin.com/palette/))
+      backdrop: rgba(30, 30, 46, 0.5),
+      // Mocha Base ◎
+      success: #a6e3a1,
+      // Mocha Green ([catppuccin.com](https://catppuccin.com/palette/))
+      info: #89b4fa,
+      // Mocha Blue ([catppuccin.com](https://catppuccin.com/palette/))
+      warning: #f9e2af,
+      // Mocha Yellow ([catppuccin.com](https://catppuccin.com/palette/))
+      error: #f38ba8,
+      // Mocha Red ([catppuccin.com](https://catppuccin.com/palette/))
+    ),
+  ),
+);
+
+// Generate CSS variables per theme and mode
+@each $themeName, $modes in $themes {
+  @each $mode, $vars in $modes {
+    .theme-#{$themeName}-#{$mode} {
+      @each $token, $color in $vars {
+        --#{$token}: #{$color};
+      }
+    }
+  }
+}

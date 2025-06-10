@@ -1,0 +1,118 @@
+@use "./fonts.scss";
+
+// typography.scss
+// Initial font rules for Recursive headers and Inter body text
+// 8px baseline grid & comfortable line-height
+
+// Baseline grid and line-height
+$baseline: 8px;
+$base-line-height: $baseline * 3; // 24px
+$heading-leading: $base-line-height / 16px; // 1.5
+$text-leading: ($base-line-height + $baseline) / 16px; // 2
+
+// Font stacks matching @font-face rules
+$font-body: "Inter", sans-serif;
+$font-header: "Recursive", sans-serif;
+
+// Global html/body settings with Inter variable font settings
+html {
+  font-family: $font-body;
+  font-size: 100%; // 16px
+  line-height: $text-leading;
+  font-variation-settings: "wght" 400;
+}
+
+// Headings h1–h6 with Recursive Casual (using major third scale)
+@each $level,
+  $size
+    in (
+      1: 3.8147rem,
+      // major third ^6
+      2: 3.0518rem,
+      // major third ^5
+      3: 2.4414rem,
+      // major third ^4
+      4: 1.9531rem,
+      // major third ^3
+      5: 1.5625rem,
+      // major third ^2
+      6: 1.25rem // major third ^1
+    )
+{
+  h#{$level} {
+    font-family: $font-header;
+    font-variation-settings:
+      "wght" 900,
+      "slnt" -1.3,
+      "CASL" 0.25,
+      "CRSV" 1;
+    font-size: $size;
+    line-height: $heading-leading;
+    margin-top: 0;
+    margin-bottom: $baseline * 3; // 24px
+  }
+}
+
+// Paragraphs inherit Inter settings
+p {
+  font-family: $font-body;
+  font-size: 1rem; // 16px
+  line-height: $text-leading;
+  font-variation-settings: "wght" 400;
+  margin-top: 0;
+  margin-bottom: $baseline * 2; // 16px
+}
+
+// Italic and emphasis use Inter italic face and variation
+em,
+i {
+  font-family: $font-body;
+  font-style: italic;
+  font-variation-settings: "wght" 400;
+  line-height: $text-leading;
+}
+
+// Superscript and subscript
+sup,
+sub {
+  font-family: $font-body;
+  font-size: 0.75rem; // 12px
+  font-variation-settings: "wght" 400;
+  line-height: 1;
+}
+
+sup {
+  vertical-align: super;
+}
+sub {
+  vertical-align: sub;
+}
+
+// Small text
+small {
+  font-family: $font-body;
+  font-size: 0.875rem; // 14px
+  line-height: $text-leading;
+  font-variation-settings: "wght" 400;
+}
+
+code,
+pre {
+  font-family: "Recursive", monospace;
+  font-variation-settings:
+    "MONO" 1,
+    "wght" 400;
+  line-height: $text-leading;
+  font-style: oblique;
+  font-variation-settings:
+    "MONO" 1,
+    "wght" 400,
+    "slnt" -5deg;
+}
+
+pre {
+  display: inline-block;
+  background: var(--surface);
+  padding: 0 4px;
+  border-radius: 4px;
+}
