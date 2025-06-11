@@ -24,3 +24,21 @@
   font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/src/assets/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/src/assets/fonts/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}

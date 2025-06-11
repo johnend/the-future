@@ -25,10 +25,10 @@ export default function About() {
       </p>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat esse
-        tempora, numquam, similique adipisci ipsa velit quo doloribus magnam
-        commodi quia recusandae cumque ad aliquid inventore aspernatur itaque
-        magni debitis?
+        Lorem <pre>ipsum dolor sit</pre> amet consectetur adipisicing elit.
+        Fugiat esse tempora, numquam, similique adipisci ipsa velit quo
+        doloribus magnam commodi quia recusandae cumque ad aliquid inventore
+        aspernatur itaque magni debitis?
       </p>
       <div>
         <div>Experience</div>

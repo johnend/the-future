@@ -12,7 +12,7 @@ $text-leading: ($base-line-height + $baseline) / 16px; // 2
 
 // Font stacks matching @font-face rules
 $font-body: "Inter", sans-serif;
-$font-header: "Recursive", sans-serif;
+$font-header: "Fraunces", sans-serif;
 
 // Global html/body settings with Inter variable font settings
 html {
@@ -39,12 +39,18 @@ html {
       6: 1.25rem // major third ^1
     )
 {
+  $heading-weight: if(
+    $level == 1,
+    900,
+    if($level == 2 or $level == 3, 850, 800)
+  );
+
   h#{$level} {
     font-family: $font-header;
     font-variation-settings:
-      "wght" 900,
+      "wght" #{$heading-weight},
       "slnt" -1.3,
-      "CASL" 0.25,
+      "CASL" 1,
       "CRSV" 1;
     font-size: $size;
     line-height: $heading-leading;
@@ -115,4 +121,33 @@ pre {
   background: var(--surface);
   padding: 0 4px;
   border-radius: 4px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: var(--link-hover);
+  }
+
+  &:focus {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+  }
+
+  // if you ever need to “disable” a link
+  &.disabled,
+  &[aria-disabled="true"] {
+    color: var(--disabled);
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
 }

@@ -1,188 +1,297 @@
 // themes.scss
-// Extended app theme tokens for Rosé Pine and Catppuccin (light + dark)
-// Using actual palette values: Rose Pine (dawn & main) & Catppuccin (latte & mocha)
+// Extended app theme tokens for Rosé Pine, Catppuccin, Tokyo Night, Kanagawa, Gruvbox, Carbonfox, Nord, and GitHub
 
 $themes: (
   rose-pine: (
     light: (
       bg: #faf4ed,
-      // dawn Base ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       surface: #fffaf3,
-      // dawn Surface ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "muted-surface": #f2e9e1,
-      // dawn Overlay ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       text: #575279,
-      // dawn Text ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "text-muted": #9893a5,
-      // dawn Muted ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       primary: #286983,
-      // dawn Pine ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "primary-hover": #3e8fb0,
-      // dawn Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       secondary: #9ccfd8,
-      // dawn Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "secondary-hover": #c4a7e7,
-      // dawn Iris ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       accent: #eb6f92,
-      // dawn Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "accent-hover": #f6c177,
-      // dawn Gold ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       link: #c4a7e7,
-      // dawn Iris ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "link-hover": #eb6f92,
-      // dawn Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       border: #f2e9e1,
-      // dawn Overlay ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "focus-ring": #cecacd,
-      // dawn Highlight High ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       disabled: #9893a5,
-      // dawn Muted ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       backdrop: rgba(242, 233, 222, 0.5),
-      // dawn Overlay ◎
       success: #286983,
-      // dawn Pine ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       info: #9ccfd8,
-      // dawn Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       warning: #f6c177,
-      // dawn Gold ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       error: #eb6f92,
-      // dawn Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
     ),
     dark: (
       bg: #191724,
-      // main Base ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       surface: #1f1d2e,
-      // main Surface ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "muted-surface": #26233a,
-      // main Overlay ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       text: #e0def4,
-      // main Text ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "text-muted": #6e6a86,
-      // main Muted ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       primary: #31748f,
-      // main Pine ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "primary-hover": #9ccfd8,
-      // main Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       secondary: #9ccfd8,
-      // main Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "secondary-hover": #c4a7e7,
-      // main Iris ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       accent: #eb6f92,
-      // main Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "accent-hover": #f6c177,
-      // main Gold ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       link: #c4a7e7,
-      // main Iris ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "link-hover": #eb6f92,
-      // main Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       border: #26233a,
-      // main Overlay ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       "focus-ring": #403d52,
-      // main Highlight Med ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       disabled: #6e6a86,
-      // main Muted ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       backdrop: rgba(38, 35, 58, 0.5),
-      // main Overlay ◎
       success: #31748f,
-      // main Pine ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       info: #9ccfd8,
-      // main Foam ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       warning: #f6c177,
-      // main Gold ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
       error: #eb6f92,
-      // main Love ([rosepinetheme.com](https://rosepinetheme.com/palette/ingredients/?utm_source=chatgpt.com))
     ),
   ),
   catppuccin: (
     light: (
       bg: #eff1f5,
-      // Latte Base ([catppuccin.com](https://catppuccin.com/palette/))
       surface: #ccd0da,
-      // Latte Surface 0 ([catppuccin.com](https://catppuccin.com/palette/))
       "muted-surface": #bcc0cc,
-      // Latte Surface 1 ([catppuccin.com](https://catppuccin.com/palette/))
       text: #4c4f69,
-      // Latte Text ([catppuccin.com](https://catppuccin.com/palette/))
       "text-muted": #6c6f85,
-      // Latte Subtext 0 ([catppuccin.com](https://catppuccin.com/palette/))
       primary: #ea76cb,
-      // Latte Pink ([catppuccin.com](https://catppuccin.com/palette/))
       "primary-hover": #8839ef,
-      // Latte Mauve ([catppuccin.com](https://catppuccin.com/palette/))
       secondary: #179299,
-      // Latte Teal ([catppuccin.com](https://catppuccin.com/palette/))
       "secondary-hover": #04a5e5,
-      // Latte Sky ([catppuccin.com](https://catppuccin.com/palette/))
       accent: #df8e1d,
-      // Latte Yellow ([catppuccin.com](https://catppuccin.com/palette/))
       "accent-hover": #fe640b,
-      // Latte Peach ([catppuccin.com](https://catppuccin.com/palette/))
       link: #209fb5,
-      // Latte Sapphire ([catppuccin.com](https://catppuccin.com/palette/))
       "link-hover": #1e66f5,
-      // Latte Blue ([catppuccin.com](https://catppuccin.com/palette/))
       border: #9ca0b0,
-      // Latte Overlay 0 ([catppuccin.com](https://catppuccin.com/palette/))
       "focus-ring": #8c8fa1,
-      // Latte Overlay 1 ([catppuccin.com](https://catppuccin.com/palette/))
       disabled: #acb0be,
-      // Latte Surface 2 ([catppuccin.com](https://catppuccin.com/palette/))
       backdrop: rgba(239, 241, 245, 0.5),
-      // Latte Base ◎
       success: #40a02b,
-      // Latte Green ([catppuccin.com](https://catppuccin.com/palette/))
       info: #1e66f5,
-      // Latte Blue ([catppuccin.com](https://catppuccin.com/palette/))
       warning: #df8e1d,
-      // Latte Yellow ([catppuccin.com](https://catppuccin.com/palette/))
       error: #d20f39,
-      // Latte Red ([catppuccin.com](https://catppuccin.com/palette/))
     ),
     dark: (
       bg: #1e1e2e,
-      // Mocha Base ([catppuccin.com](https://catppuccin.com/palette/))
       surface: #313244,
-      // Mocha Surface 0 ([catppuccin.com](https://catppuccin.com/palette/))
       "muted-surface": #45475a,
-      // Mocha Surface 1 ([catppuccin.com](https://catppuccin.com/palette/))
       text: #cdd6f4,
-      // Mocha Text ([catppuccin.com](https://catppuccin.com/palette/))
       "text-muted": #a6adc8,
-      // Mocha Subtext 0 ([catppuccin.com](https://catppuccin.com/palette/))
       primary: #f5c2e7,
-      // Mocha Pink ([catppuccin.com](https://catppuccin.com/palette/))
       "primary-hover": #cba6f7,
-      // Mocha Mauve ([catppuccin.com](https://catppuccin.com/palette/))
       secondary: #94e2d5,
-      // Mocha Teal ([catppuccin.com](https://catppuccin.com/palette/))
       "secondary-hover": #89dceb,
-      // Mocha Sky ([catppuccin.com](https://catppuccin.com/palette/))
       accent: #f9e2af,
-      // Mocha Yellow ([catppuccin.com](https://catppuccin.com/palette/))
       "accent-hover": #fab387,
-      // Mocha Peach ([catppuccin.com](https://catppuccin.com/palette/))
       link: #74c7ec,
-      // Mocha Sapphire ([catppuccin.com](https://catppuccin.com/palette/))
       "link-hover": #89b4fa,
-      // Mocha Blue ([catppuccin.com](https://catppuccin.com/palette/))
       border: #6c7086,
-      // Mocha Overlay 0 ([catppuccin.com](https://catppuccin.com/palette/))
       "focus-ring": #7f849c,
-      // Mocha Overlay 1 ([catppuccin.com](https://catppuccin.com/palette/))
       disabled: #585b70,
-      // Mocha Surface 2 ([catppuccin.com](https://catppuccin.com/palette/))
       backdrop: rgba(30, 30, 46, 0.5),
-      // Mocha Base ◎
       success: #a6e3a1,
-      // Mocha Green ([catppuccin.com](https://catppuccin.com/palette/))
       info: #89b4fa,
-      // Mocha Blue ([catppuccin.com](https://catppuccin.com/palette/))
       warning: #f9e2af,
-      // Mocha Yellow ([catppuccin.com](https://catppuccin.com/palette/))
       error: #f38ba8,
-      // Mocha Red ([catppuccin.com](https://catppuccin.com/palette/))
     ),
   ),
+  kanagawa: (
+    light: (
+      bg: #faf3e0,
+      surface: #f2e9dd,
+      "muted-surface": #e1d9c8,
+      text: #593c3a,
+      "text-muted": #898176,
+      primary: #7e9cd8,
+      "primary-hover": #718cd6,
+      secondary: #88b14b,
+      "secondary-hover": #d9c283,
+      accent: #e5738f,
+      "accent-hover": #ffa066,
+      link: #7e9cd8,
+      "link-hover": #7c6fbe,
+      border: #73675a,
+      "focus-ring": #5c514c,
+      disabled: #c1bdac,
+      backdrop: rgba(242, 233, 221, 0.5),
+      success: #88b14b,
+      info: #7e9cd8,
+      warning: #d9c283,
+      error: #e46876,
+    ),
+    dark: (
+      bg: #16161d,
+      surface: #1f1f28,
+      "muted-surface": #2f334d,
+      text: #c8c093,
+      "text-muted": #6e7686,
+      primary: #61afef,
+      "primary-hover": #7389cc,
+      secondary: #98be65,
+      "secondary-hover": #e0af68,
+      accent: #eba657,
+      "accent-hover": #e69875,
+      link: #957fb8,
+      "link-hover": #938aa9,
+      border: #2b3a49,
+      "focus-ring": #394b70,
+      disabled: #324559,
+      backdrop: rgba(22, 22, 29, 0.5),
+      success: #98be65,
+      info: #61afef,
+      warning: #e0af68,
+      error: #e06c75,
+    ),
+  ),
+  gruvbox: (
+    light: (
+      bg: #fbf1c7,
+      surface: #ebdbb2,
+      "muted-surface": #d5c4a1,
+      text: #3c3836,
+      "text-muted": #665c54,
+      primary: #458588,
+      "primary-hover": #689d6a,
+      secondary: #b16286,
+      "secondary-hover": #a89984,
+      accent: #d79921,
+      "accent-hover": #fabd2f,
+      link: #7daea3,
+      "link-hover": #83a598,
+      border: #d5c4a1,
+      "focus-ring": #928374,
+      disabled: #7c6f64,
+      backdrop: rgba(251, 241, 199, 0.5),
+      success: #689d6a,
+      info: #458588,
+      warning: #fabd2f,
+      error: #cc241d,
+    ),
+    dark: (
+      bg: #282828,
+      surface: #3c3836,
+      "muted-surface": #504945,
+      text: #ebdbb2,
+      "text-muted": #665c54,
+      primary: #83a598,
+      "primary-hover": #8ec07c,
+      secondary: #d3869b,
+      "secondary-hover": #bdae93,
+      accent: #d79921,
+      "accent-hover": #fabd2f,
+      link: #8ec07c,
+      "link-hover": #98bb6c,
+      border: #504945,
+      "focus-ring": #665c54,
+      disabled: #7c6f64,
+      backdrop: rgba(40, 40, 40, 0.5),
+      success: #8ec07c,
+      info: #83a598,
+      warning: #fabd2f,
+      error: #cc241d,
+    ),
+  ),
+  // Nord theme
+  nord: (
+      light: (
+        bg: #eceff4,
+        surface: #e5e9f0,
+        "muted-surface": #d8dee9,
+        text: #4c566a,
+        "text-muted": #434c5e,
+        primary: #5e81ac,
+        "primary-hover": #81a1c1,
+        secondary: #88c0d0,
+        "secondary-hover": #8fbcbb,
+        accent: #ebcb8b,
+        "accent-hover": #d08770,
+        link: #88c0d0,
+        "link-hover": #81a1c1,
+        border: #d8dee9,
+        "focus-ring": #81a1c1,
+        disabled: #4c566a,
+        backdrop: rgba(236, 239, 244, 0.5),
+        success: #a3be8c,
+        info: #88c0d0,
+        warning: #ebcb8b,
+        error: #bf616a,
+      ),
+      dark: (
+        bg: #2e3440,
+        surface: #3b4252,
+        "muted-surface": #434c5e,
+        text: #eceff4,
+        "text-muted": #e5e9f0,
+        primary: #81a1c1,
+        "primary-hover": #88c0d0,
+        secondary: #8fbcbb,
+        "secondary-hover": #81a1c1,
+        accent: #b48ead,
+        "accent-hover": #8fbcbb,
+        link: #81a1c1,
+        "link-hover": #88c0d0,
+        border: #434c5e,
+        "focus-ring": #88c0d0,
+        disabled: #4c566a,
+        backdrop: rgba(46, 52, 64, 0.5),
+        success: #a3be8c,
+        info: #81a1c1,
+        warning: #ebcb8b,
+        error: #bf616a,
+      ),
+    ),
+  // GitHub theme
+  github: (
+      light: (
+        bg: #ffffff,
+        surface: #f6f8fa,
+        "muted-surface": #e1e4e8,
+        text: #24292f,
+        "text-muted": #57606a,
+        primary: #0969da,
+        "primary-hover": #218bff,
+        secondary: #8250df,
+        "secondary-hover": #a475f9,
+        accent: #db61a2,
+        "accent-hover": #e18ebd,
+        link: #0969da,
+        "link-hover": #218bff,
+        border: #e1e4e8,
+        "focus-ring": rgba(3, 102, 214, 0.3),
+        disabled: #d1d5da,
+        backdrop: rgba(27, 31, 35, 0.5),
+        success: #28a745,
+        info: #218bff,
+        warning: #bf8700,
+        error: #d73a49,
+      ),
+      dark: (
+        bg: #0d1117,
+        surface: #161b22,
+        "muted-surface": #21262d,
+        text: #c9d1d9,
+        "text-muted": #8b949e,
+        primary: #58a6ff,
+        "primary-hover": #79c0ff,
+        secondary: #bc8cff,
+        "secondary-hover": #d2a8ff,
+        accent: #f97583,
+        "accent-hover": #ffa198,
+        link: #58a6ff,
+        "link-hover": #79c0ff,
+        border: #30363d,
+        "focus-ring": rgba(88, 166, 255, 0.4),
+        disabled: #484f58,
+        backdrop: rgba(13, 17, 23, 0.5),
+        success: #3fb950,
+        info: #58a6ff,
+        warning: #d29922,
+        error: #f85149,
+      ),
+    ),
 );
 
 // Generate CSS variables per theme and mode

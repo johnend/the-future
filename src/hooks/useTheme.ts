@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 
-type Theme = "rose-pine" | "catppuccin" | "tokynight" | "kanagawa";
+type Theme =
+  | "rose-pine"
+  | "catppuccin"
+  | "kanagawa"
+  | "gruvbox"
+  | "nord"
+  | "github";
 type Mode = "dark" | "light";
 
 const STORAGE_KEY = "app-theme";
