@@ -1,0 +1,46 @@
+@use "sass:map";
+
+$kanagawa: (
+  dark: (
+    default: (
+      main: #16161d,
+      // bg
+      surface: #1f1f28,
+      // surface
+      overlay: #2f334d,
+      // muted-surface
+      muted: #6e7686,
+      // text-muted
+      subtle: #2b3a49,
+      // border
+      text: #c8c093,
+      // text
+      "highlight-low": #394b70,
+      // focus-ring
+      "highlight-med": #7389cc,
+      // primary-hover
+      "highlight-high": #61afef, // primary
+    ),
+  ),
+  light: (
+    default: (
+      main: #faf3e0,
+      // bg
+      surface: #f2e9dd,
+      // surface
+      overlay: #e1d9c8,
+      // muted-surface
+      muted: #898176,
+      // text-muted
+      subtle: #73675a,
+      // border
+      text: #593c3a,
+      // text
+      "highlight-low": #5c514c,
+      // focus-ring
+      "highlight-med": #718cd6,
+      // primary-hover
+      "highlight-high": #7e9cd8, // primary
+    ),
+  ),
+) !default;

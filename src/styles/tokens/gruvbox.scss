@@ -1,0 +1,48 @@
+@use "sass:map";
+
+$gruvbox: (
+  dark: (
+    default: (
+      main: #282828,
+      // bg
+      surface: #3c3836,
+      // surface
+      overlay: #504945,
+      // muted-surface
+      muted: #665c54,
+      // text-muted
+      subtle: #504945,
+      // border
+      text: #ebdbb2,
+      // text
+      "highlight-low": #665c54,
+      // focus-ring
+      "highlight-med": #8ec07c,
+      // primary-hover
+      "highlight-high": #83a598,
+      // primary
+    ),
+  ),
+  light: (
+    default: (
+      main: #fbf1c7,
+      // bg
+      surface: #ebdbb2,
+      // surface
+      overlay: #d5c4a1,
+      // muted-surface
+      muted: #665c54,
+      // text-muted
+      subtle: #d5c4a1,
+      // border
+      text: #3c3836,
+      // text
+      "highlight-low": #928374,
+      // focus-ring
+      "highlight-med": #689d6a,
+      // primary-hover
+      "highlight-high": #458588,
+      // primary
+    ),
+  ),
+) !default;

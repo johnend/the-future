@@ -6,9 +6,9 @@
 
 // Baseline grid and line-height
 $baseline: 8px;
-$base-line-height: $baseline * 3; // 24px
-$heading-leading: $base-line-height / 16px; // 1.5
-$text-leading: ($base-line-height + $baseline) / 16px; // 2
+$base-line-height: calc($baseline * 3); // 24px
+$heading-leading: calc($base-line-height / 16px); // 1.5
+$text-leading: calc(($base-line-height + $baseline) / 16px); // 2
 
 // Font stacks matching @font-face rules
 $font-body: "Inter", sans-serif;
