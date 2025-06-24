@@ -1,8 +1,8 @@
+import { Switch } from "radix-ui";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../hooks/useTheme";
 import styles from "./nav.module.scss";
-import { HiColorSwatch, HiOutlineMoon, HiOutlineSun } from "react-icons/hi";
-import { IconContext } from "react-icons";
+import { MagicWandIcon, MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
 type Theme =
   | "rose-pine"
@@ -20,7 +20,7 @@ const links = [
 ];
 
 export function Nav() {
-  const { theme, mode, setTheme, toggleMode } = useTheme();
+  const { theme, setTheme, toggleMode } = useTheme();
   const themes: Theme[] = [
     "rose-pine",
     "catppuccin",
@@ -42,9 +42,7 @@ export function Nav() {
       </nav>
       <div style={{ display: "flex", gap: 16 }}>
         <label>
-          <IconContext.Provider value={{ color: "var(--secondary)" }}>
-            <HiColorSwatch />
-          </IconContext.Provider>
+          <MagicWandIcon className={styles.magicWandIcon} />
           <select
             value={theme}
             onChange={(e) => setTheme(e.target.value as Theme)}
@@ -58,11 +56,23 @@ export function Nav() {
           </select>
         </label>
 
-        <button onClick={toggleMode}>
-          <IconContext.Provider value={{ color: "var(--primary)" }}>
-            {mode === "light" ? <HiOutlineMoon /> : <HiOutlineSun />}
-          </IconContext.Provider>
-        </button>
+        <form>
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <div title="Light Mode">
+              <MoonIcon className={styles.moonIcon} />
+            </div>
+            <Switch.Root
+              className={styles.SwitchRoot}
+              id="dark-mode"
+              onCheckedChange={toggleMode}
+            >
+              <Switch.Thumb className={styles.SwitchThumb} />
+            </Switch.Root>
+            <div title="Dark Mode">
+              <SunIcon className={styles.sunIcon} />
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   );
