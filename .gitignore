@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+src/assets/images/originals
+src/assets/images/rose-pine-light.png
+src/assets/images/rose-pine-dark.jpg
+src/assets/images/kanagawa-light.jpg
+src/assets/images/kanagawa-dark.png
+src/assets/images/catppuccin-light.jpg
+src/assets/images/catppuccin-dark.png
