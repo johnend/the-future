@@ -1,10 +1,21 @@
 @use "scss-reset";
 @use "./styles/themes.scss";
 @use "./styles/typography.scss";
+@use "./styles/nerd-font-symbols";
 
 html,
 body,
 #root {
   background-color: var(--surface);
   color: var(--text-primary);
+}
+
+select {
+  background-color: var(--main);
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+option:hover {
+  background-color: var(--text-magenta);
 }

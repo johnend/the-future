@@ -14,22 +14,34 @@ $theme-palettes: (
 // 2) Map your high-level token → the raw var name you emitted
 $theme-tokens: (
   light: (
+    main: default-main,
     surface: default-surface,
     overlay: default-overlay,
     button-primary: red-9,
     button-primary-hover: red-10,
     text-primary: default-text,
     text-muted: default-muted,
+    text-yellow: yellow-9,
+    text-pink: pink-9,
+    text-magenta: magenta-9,
+    text-cyan: cyan-11,
     border-default: default-subtle,
+    border-dark: default-highlight-low,
   ),
   dark: (
+    main: default-main,
     surface: default-surface,
     overlay: default-overlay,
     button-primary: red-9,
     button-primary-hover: red-10,
     text-primary: default-text,
     text-muted: default-muted,
+    text-yellow: yellow-9,
+    text-pink: pink-9,
+    text-magenta: magenta-9,
+    text-cyan: cyan-11,
     border-default: default-subtle,
+    border-dark: default-highlight-low,
   ),
 ) !default;
 
