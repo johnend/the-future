@@ -5,7 +5,7 @@
 $theme-palettes: (
   "rose-pine": themes.$rose-pine,
   "catppuccin": themes.$catppuccin,
-  // "kanagawa": themes.$kanagawa,
+  "kanagawa": themes.$kanagawa,
   // "gruvbox": themes.$gruvbox,
   // "nord": themes.$nord,
    // "github": themes.$github, // …etc.
@@ -17,7 +17,7 @@ $theme-tokens: (
     // more expansive colors
     // backgrounds
     bgColor-default: background-default,
-    bgColor-muted: background-dark,
+    bgColor-muted: background-muted,
     bgColor-inset: background-light,
     bgColor-disabled: background-disabled,
     bgColor-emphasis: background-emphasis,
@@ -95,7 +95,7 @@ $theme-tokens: (
     // more expansive colors
     // backgrounds
     bgColor-default: background-default,
-    bgColor-muted: background-dark,
+    bgColor-muted: background-muted,
     bgColor-inset: background-light,
     bgColor-disabled: background-disabled,
     bgColor-emphasis: background-emphasis,
@@ -178,7 +178,7 @@ $theme-tokens: (
       // a) Raw scale vars: --<hue>-<step>
       @each $hue, $scale-map in $hues {
         @each $step, $color in $scale-map {
-          --#{"#{$hue}"}-#{$step}: #{$color};
+          --#{"#{$hue}"}-#{"" + $step}: #{$color};
         }
       }
 

@@ -4,7 +4,7 @@ $rose-pine: (
   dark: (
     background: (
       default: #191724,
-      dark: #1f1d2e,
+      muted: #1f1d2e,
       light: #26233a,
       disabled: #6e6a87,
       emphasis: #908caa,
@@ -282,16 +282,16 @@ $rose-pine: (
   light: (
     background: (
       default: #faf4ed,
-      dark: #fffaf3,
+      muted: #fffaf3,
       light: #f2e9e1,
       disabled: #989ea5,
       emphasis: #797593,
     ),
     text: (
       default: #575279,
-      subtext1: #d4d3e0,
-      subtext0: #c2c0d5,
-      emphasis: #6d6986,
+      subtext1: #8c86ba,
+      subtext0: #827cad,
+      emphasis: #201b38,
     ),
     border: (
       default: #797593,
