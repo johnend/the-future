@@ -1,0 +1,21 @@
+.controls > ul {
+  gap: 16px;
+}
+
+.controls > ul,
+.controls > ul > li {
+  display: flex;
+  align-items: center;
+}
+
+.brightness {
+  color: var(--fgColor-attention);
+}
+
+.darkMode {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}

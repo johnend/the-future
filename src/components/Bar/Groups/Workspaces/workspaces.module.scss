@@ -1,0 +1,14 @@
+.workspaces > ul {
+  display: flex;
+  gap: 12px;
+  color: var(--fgColor-muted);
+}
+
+.workspaces > ul > li {
+  color: var(--fgColor-muted);
+}
+
+.workspaces > ul > li:hover {
+  color: var(--fgColor-default);
+  cursor: pointer;
+}
