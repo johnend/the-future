@@ -3,45 +3,171 @@
 
 // 1) Gather your palettes
 $theme-palettes: (
-  "rose-pine": themes.$rose-pine,
+  // "rose-pine": themes.$rose-pine,
   "catppuccin": themes.$catppuccin,
-  "kanagawa": themes.$kanagawa,
-  "gruvbox": themes.$gruvbox,
-  "nord": themes.$nord,
-  "github": themes.$github, // …etc.
+  // "kanagawa": themes.$kanagawa,
+  // "gruvbox": themes.$gruvbox,
+  // "nord": themes.$nord,
+   // "github": themes.$github, // …etc.
 ) !default;
 
 // 2) Map your high-level token → the raw var name you emitted
 $theme-tokens: (
   light: (
-    main: default-main,
-    surface: default-surface,
-    overlay: default-overlay,
-    button-primary: red-9,
-    button-primary-hover: red-10,
-    text-primary: default-text,
-    text-muted: default-muted,
-    text-yellow: yellow-9,
-    text-pink: pink-9,
-    text-magenta: magenta-9,
-    text-cyan: cyan-11,
-    border-default: default-subtle,
-    border-dark: default-highlight-low,
+    // more expansive colors
+    // backgrounds
+    bgColor-default: background-default,
+    bgColor-muted: background-dark,
+    bgColor-inset: background-light,
+    bgColor-disabled: background-disabled,
+    bgColor-emphasis: background-emphasis,
+    // bgColor-transparent,
+    // borders
+    borderColor-default: border-default,
+    borderColor-muted: border-muted,
+    borderColor-emphasis: border-emphasis,
+    borderColor-disabled: border-disabled,
+    borderColor-transparent: border-transparent,
+    borderColor-translucent: border-translucent,
+    //foregrounds
+    fgColor-default: text-default,
+    fgColor-muted: text-subtext1,
+    fgColor-onEmphasis: text-emphasis,
+    fgColor-disabled: text-subtext0,
+    fgColor-link: accent-9,
+    fgColor-white: #ffffff,
+    //accent
+    fgColor-accent: accent-9,
+    bgColor-accent-muted: accent-5,
+    bgColor-accent-emphasis: accent-11,
+    borderColor-accent-muted: accent-5,
+    borderColor-accent-emphasis: accent-11,
+    //success
+    fgColor-success: green-9,
+    bgColor-success-muted: green-5,
+    bgColor-success-emphasis: green-11,
+    borderColor-success-muted: green-5,
+    borderColor-success-emphasis: green-11,
+    //attention
+    fgColor-attention: yellow-9,
+    bgColor-attention-muted: yellow-5,
+    bgColor-attention-emphasis: yellow-11,
+    borderColor-attention-muted: yellow-5,
+    borderColor-attention-emphasis: yellow-11,
+    //severe
+    fgColor-severe: orange-9,
+    bgColor-severe-muted: orange-5,
+    bgColor-severe-emphasis: orange-11,
+    borderColor-severe-muted: orange-5,
+    borderColor-severe-emphasis: orange-11,
+    //danger
+    fgColor-danger: red-9,
+    bgColor-danger-muted: red-5,
+    bgColor-danger-emphasis: red-11,
+    borderColor-danger-muted: red-5,
+    borderColor-danger-emphasis: red-11,
+    //open
+    // fgColor-open: ,
+    // bgColor-open-muted: ,
+    // bgColor-open-emphasis: ,
+    // borderColor-open-muted: ,
+    // borderColor-open-emphasis: ,
+    //closed
+    // fgColor-closed: ,
+    // bgColor-closed-muted: ,
+    // bgColor-closed-emphasis: ,
+    // borderColor-closed-muted: ,
+    // borderColor-closed-emphasis: ,
+    //done
+    // fgColor-done: ,
+    // bgColor-done-muted: ,
+    // bgColor-done-emphasis: ,
+    // borderColor-done-muted: ,
+    // borderColor-done-emphasis: ,
+    //sponsors
+    // fgColor-sponsors: ,
+    // bgColor-sponsors-muted: ,
+    // bgColor-sponsors-emphasis: ,
+    // borderColor-sponsors-muted: ,
+     // borderColor-sponsors-emphasis: ,
   ),
   dark: (
-    main: default-main,
-    surface: default-surface,
-    overlay: default-overlay,
-    button-primary: red-9,
-    button-primary-hover: red-10,
-    text-primary: default-text,
-    text-muted: default-muted,
-    text-yellow: yellow-9,
-    text-pink: pink-9,
-    text-magenta: magenta-9,
-    text-cyan: cyan-11,
-    border-default: default-subtle,
-    border-dark: default-highlight-low,
+    // more expansive colors
+    // backgrounds
+    bgColor-default: background-default,
+    bgColor-muted: background-dark,
+    bgColor-inset: background-light,
+    bgColor-disabled: background-disabled,
+    bgColor-emphasis: background-emphasis,
+    // bgColor-transparent,
+    // borders
+    borderColor-default: border-default,
+    borderColor-muted: border-muted,
+    borderColor-emphasis: border-emphasis,
+    borderColor-disabled: border-disabled,
+    borderColor-transparent: border-transparent,
+    borderColor-translucent: border-translucent,
+    //foregrounds
+    fgColor-default: text-default,
+    fgColor-muted: text-subtext1,
+    fgColor-onEmphasis: text-emphasis,
+    fgColor-disabled: text-subtext0,
+    fgColor-link: accent-9,
+    fgColor-white: #ffffff,
+    //accent
+    fgColor-accent: accent-9,
+    bgColor-accent-muted: accent-5,
+    bgColor-accent-emphasis: accent-11,
+    borderColor-accent-muted: accent-5,
+    borderColor-accent-emphasis: accent-11,
+    //success
+    fgColor-success: green-9,
+    bgColor-success-muted: green-5,
+    bgColor-success-emphasis: green-11,
+    borderColor-success-muted: green-5,
+    borderColor-success-emphasis: green-11,
+    //attention
+    fgColor-attention: yellow-9,
+    bgColor-attention-muted: yellow-5,
+    bgColor-attention-emphasis: yellow-11,
+    borderColor-attention-muted: yellow-5,
+    borderColor-attention-emphasis: yellow-11,
+    //severe
+    fgColor-severe: orange-9,
+    bgColor-severe-muted: orange-5,
+    bgColor-severe-emphasis: orange-11,
+    borderColor-severe-muted: orange-5,
+    borderColor-severe-emphasis: orange-11,
+    //danger
+    fgColor-danger: red-9,
+    bgColor-danger-muted: red-5,
+    bgColor-danger-emphasis: red-11,
+    borderColor-danger-muted: red-5,
+    borderColor-danger-emphasis: red-11,
+    //open
+    // fgColor-open: ,
+    // bgColor-open-muted: ,
+    // bgColor-open-emphasis: ,
+    // borderColor-open-muted: ,
+    // borderColor-open-emphasis: ,
+    //closed
+    // fgColor-closed: ,
+    // bgColor-closed-muted: ,
+    // bgColor-closed-emphasis: ,
+    // borderColor-closed-muted: ,
+    // borderColor-closed-emphasis: ,
+    //done
+    // fgColor-done: ,
+    // bgColor-done-muted: ,
+    // bgColor-done-emphasis: ,
+    // borderColor-done-muted: ,
+    // borderColor-done-emphasis: ,
+    //sponsors
+    // fgColor-sponsors: ,
+    // bgColor-sponsors-muted: ,
+    // bgColor-sponsors-emphasis: ,
+    // borderColor-sponsors-muted: ,
+     // borderColor-sponsors-emphasis: ,
   ),
 ) !default;
 

@@ -6,16 +6,16 @@
 html,
 body,
 #root {
-  background-color: var(--surface);
-  color: var(--text-primary);
+  background-color: var(--bgColor-default);
+  color: var(--fgColor-default);
 }
 
 select {
-  background-color: var(--main);
-  color: var(--text-primary);
+  background-color: var(--bgColor-default);
+  color: var(--fgColor-default);
   line-height: 1.2;
 }
 
 option:hover {
-  background-color: var(--text-magenta);
+  background-color: var(--fgColor-accent);
 }
